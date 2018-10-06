@@ -1,0 +1,29 @@
+<div class="cards">
+  <div class="card-block">
+    <div class="wrap-title-block">
+      <h2 class="title-bill2">Курс</h2>
+    </div>
+    <table class="wrap2-title-block">
+      <tr class="tr">
+        <th class="currency">Валюта</th>
+        <th class="course">Курс</th>
+        <th class="title-table-data">Дата</th>
+      </tr>
+      <tr class="tr">
+        <td class="currency">UAH</td>
+        <td class="course">1</td>
+        <td class="title-table-data">{{ date | date:'dd.MM.yyyy'}}</td>
+      </tr>
+      <tr class="tr">
+        <td class="currency">USD</td>
+        <td class="course">{{ currency[0]['buy'].slice(0, 6) }}</td>
+        <td class="title-table-data">{{ date | date:'dd.MM.yyyy '}}</td>
+      </tr>
+      <tr class="tr">
+        <td class="currency">EUR</td>
+        <td class="course">{{ currency[1]['buy'].slice(0, 6) }}</td>
+        <td class="title-table-data">{{ date | date:'dd.MM.yyyy '}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

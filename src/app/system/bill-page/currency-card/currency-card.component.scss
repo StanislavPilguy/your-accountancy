@@ -1,0 +1,47 @@
+.cards {
+	display: block;
+	max-width: 400px;
+  width: 100%;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 0;
+	padding: 20px;
+	margin: 10px 50px 10px 10px;
+}
+
+.title-bill2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #3a4553;
+}
+
+.wrap2-title-block {
+	width: 100%;
+	height: 100px;
+}
+
+.tr, th {
+	padding: 20px 0 20px 0;
+	border-bottom: 1px solid #49b2d6;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+.tr, td {
+	padding: 10px 10px 10px 0;
+}
+
+.currency {
+	width: 33%;
+	text-align: center;
+}
+
+.course {
+	text-align: center;
+	width: 33%;
+}
+
+.title-table-data {
+	text-align: center;
+	width: 33%;
+}

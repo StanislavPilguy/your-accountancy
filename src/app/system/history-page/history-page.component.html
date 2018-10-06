@@ -1,0 +1,10 @@
+<div class="title-block">
+	<div class="title">Страница истории</div>
+</div>
+<div *ngIf="!isLoaded" class="text-center">Loading...</div>
+<div *ngIf="isLoaded">
+	<pips-history-chart [data]="chartData"></pips-history-chart>
+	<pips-history-events [categories]="categories" [events]="events"></pips-history-events>
+	<pips-history-filter></pips-history-filter>
+</div>
+

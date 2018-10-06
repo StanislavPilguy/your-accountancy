@@ -1,0 +1,89 @@
+.title-block {
+	display: block;
+	width: 100%;
+	height: 60px;
+	margin: 30px auto 30px auto;
+	border-bottom: solid 1px #49b2d6;
+
+}
+
+.title {
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	color: #fff;
+	margin-left: 50px;
+	margin-top: 0;
+}
+
+.btn {
+	display: block;
+	background-color: transparent;
+	outline: none !important;
+	box-shadow: none;
+	border: solid 1px ;
+	border-radius: 0;
+	margin-right: 20px;
+	border: solid 1px #49b2d6;
+}
+
+.btn:hover {
+	background-color: #49b2d6;
+	color: #fff;
+}
+
+.btn:hover .fa {
+	background-color: #49b2d6;
+	color: #fff;
+}
+
+.btn .fa {
+	color:  #49b2d6;
+}
+
+.section {
+	display: block;
+	margin-left: 250px;
+	height: 100vh;
+}
+
+.wrap-card {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: stretch;
+	max-width: 850px;
+}
+
+.title-bill {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #3a4553;
+	font-weight: 500;
+}
+
+.stat-container {
+	display: flex;
+	border-bottom: solid 1px #49b2d6;
+	margin: 35px 0 20px 0;
+}
+
+.stat-icon {
+	display: block;
+	color: #49b2d6;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	margin-right: 10px;
+	padding-bottom: 5px;
+}
+
+.value {
+	display: block;
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+
+

@@ -1,0 +1,15 @@
+<div class="title-block">
+  <h1 class="title pull-left">Страница записи</h1>
+</div>
+
+<section *ngIf="!isLoaded">
+  isLoading...
+</section>
+
+<section *ngIf="isLoaded">
+<div class="wrap-card">
+  <pips-add-event [categories]="categories"></pips-add-event>
+  <pips-add-category (onCategoryAdd)="newCategoryAded($event)"></pips-add-category>
+  <pips-edit-category [categories]="categories" (onCategoryEdit)="categoryWasEdited($event)"></pips-edit-category>
+</div>
+</section>

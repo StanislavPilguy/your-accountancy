@@ -1,0 +1,133 @@
+.text-center {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000;
+}
+
+.form-group {
+	margin: 30px 0 30px 0;
+}
+
+.label {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #3a4553;
+}
+
+.form-control {
+	height: 30px;
+	border-radius: 0;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: solid 1px #E0B378;
+	color: #814f23;
+	font-size: 14px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	background-color: #EDEDED;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	margin-top: 10px;
+}
+
+input:focus {
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.btn {
+	height: 30px;
+	margin-top: 30px;
+	border-radius: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	background-color: #AB7842;
+	border: none;
+	-webkit-transition: background 0.5s ease;
+	-o-transition: background 0.5s ease;
+	transition: background 0.5s ease;
+}
+
+.btn:hover {
+	background-color: #BD8C53;
+}
+
+.btn:focus, .btn:active, .btn:visited {
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	background-color: #DFB277 !important;
+}
+
+.text-muted {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	color: black;
+}
+
+.link {
+	margin-left: 10px;
+	color: #E0B378;
+}
+
+.checkbox {
+	display: block;
+	position: relative;
+	width: 14px;
+	height: 14px;
+	-webkit-appearance: none;
+	outline: none;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+	margin-right: 15px;
+	vertical-align: middle;
+
+}
+
+.checkbox:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #E0B378;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+
+.label-check {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 14px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: normal;
+	color: #3a4553;
+}
+
+.checkbox:checked:before {
+	border-left: none;
+	border-top: none;
+	width: 10px;
+	border-color: #E0B378;
+	-webkit-transform: rotate(45deg) translate(5px, -10px);
+	-ms-transform: rotate(45deg) translate(5px, -10px);
+	transform: rotate(45deg) translate(5px, -10px);
+}
+
+.has-error {
+	color: #ff1200;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}

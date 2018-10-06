@@ -1,0 +1,34 @@
+<div class="title-block">
+  <div class="title">Страница планирования</div>
+</div>
+<section class="section" *ngIf="!isLoaded">Loaded...</section>
+<section class="section" *ngIf="isLoaded">
+  <div class="wrap-card">
+    <div class="card-header bordered">
+      <div class="header-block">
+        <div class="title-card pull-left">Расход</div>
+        <div class="planing-expenses pull-right">Общий остаток: <span class="text-success">{{bill.value | number: '1.2'}} грн.</span></div>
+      </div>
+    </div>
+
+
+  <div class="card-block">
+    <div class="row" *ngFor="let c of categories">
+      <div class="col-md-6">
+        <div class="n-progress">
+          <div class="progress-bar {{ getCatColorClass(c) }}" [ngStyle]="{ width: getCatPersent(c) }">
+            <span class="text">{{ c.name }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p class="main pull-right">
+          <span class="text-{{ getCatColorClass(c) }}">{{ getCategoryCost(c) | number: '1.2' }}</span>
+          из
+          <span class="text-primary">{{ c.capacity | number: '1.2' }}</span> | осталось <span class="text-{{ getCatColorClass(c) }}">{{ c.capacity - getCategoryCost(c) | number: '1.2'}}</span> грн
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

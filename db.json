@@ -1,0 +1,86 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "stanislav.pilguy@gmail.com",
+      "password": "02051978pips",
+      "name": "Админестратор"
+    }
+  ],
+  "bill": {
+    "value": 2750,
+    "currency": "UAH"
+  },
+  "categories": [
+    {
+      "name": "Дом",
+      "capacity": "3300",
+      "id": 1
+    },
+    {
+      "name": "Еда",
+      "capacity": "3300",
+      "id": 2
+    },
+    {
+      "name": "Машина",
+      "capacity": "3330",
+      "id": 3
+    },
+    {
+      "name": "Спортзал",
+      "capacity": 250,
+      "id": 4
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "type": "income",
+      "amount": 1250,
+      "category": 2,
+      "date": "10.08.18 17:39:45",
+      "description": "Подарили еду в гостях"
+    },
+    {
+      "id": 2,
+      "type": "outcome",
+      "amount": 1300,
+      "category": 1,
+      "date": "13.08.18 17:15:15",
+      "description": "Купил посудомоечную машину"
+    },
+    {
+      "id": 3,
+      "type": "income",
+      "amount": 1500,
+      "category": 2,
+      "date": "17.08.18 13:21:34",
+      "description": " Поход в Макдональдс Бесплатная еда"
+    },
+    {
+      "type": "outcome",
+      "amount": 1500,
+      "category": 2,
+      "date": "03.10.2018 13.20.51",
+      "description": "test10",
+      "id": 4
+    },
+    {
+      "type": "outcome",
+      "amount": 250,
+      "category": 4,
+      "date": "03.10.2018 13.21.37",
+      "description": "test",
+      "id": 5
+    },
+    {
+      "type": "outcome",
+      "amount": 900,
+      "category": 3,
+      "date": "03.10.2018 13.22.46",
+      "description": "Бензин ",
+      "id": 6
+    }
+  ]
+}

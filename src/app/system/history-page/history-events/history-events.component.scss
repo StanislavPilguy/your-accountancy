@@ -1,0 +1,70 @@
+.section {
+	display: block;
+	background-color: #3a4553;
+	max-width: 850px;
+	width: 100%;
+	margin: 0 0 0 265px;
+}
+
+.card {
+	display: block;
+	max-width: 850px;
+	width: 100%;
+	height: auto;
+	margin: -250px auto 0 auto;
+	background-color: #fff;
+	padding: 20px;
+}
+
+.bordered {
+  border-bottom: solid 1px #3a4553;
+}
+
+.title {
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #3a4553;
+	margin: 0 0 20px 0;
+}
+
+.form-inline {
+	margin-top: -50px;
+}
+
+.form-group:focus {
+	outline: none !important;
+}
+
+.form-control {
+	box-shadow: none;
+	border-radius: 0;
+}
+
+.form-control:focus :hover :visited {
+	outline: none !important;
+}
+
+.btn {
+	border-radius: 0;
+	border-color: #49b2d6;
+
+}
+
+.btn:hover {
+	background-color: #49b2d6;
+	color: #EDEDED;
+}
+
+.btn:visited {
+	color: #49b2d6;
+}
+.show {
+	float: right;
+}
+
+.dropdown-menu {
+	border-radius: 0;
+	border: none;
+	margin-top: 10px;
+}

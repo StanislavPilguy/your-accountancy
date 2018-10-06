@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="brand">
+    <div class="logo">
+      <img class="logo-img" src="src/assets/img/1.png" alt="">
+    </div>
+    <div class="header-title">
+      <h2 class="designation-header">Бухгалтерия</h2>
+    </div>
+  </div>
+  <div class="wrap-cont-header">
+    <div class="header-block header-block-search">
+      {{ date | date:'dd.MM.yyyy'}}
+    </div>
+
+
+    <div class="dropdown" pipsDropdown>
+      <a class="dropdown-toggle name" data-toggle="dropdown" role="button">Здравствуйте, {{ user.name }}
+        <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a [routerLink]="['/system', 'records']" ><i class="fa fa-cog" aria-hidden="true"></i>Сделать запись</a></li>
+        <li><a (click)="onLogout()"><i class="fa fa-power-off" aria-hidden="true"></i>Выйти</a></li>
+      </ul>
+    </div>
+
+
+  </div>
+</header>

@@ -1,0 +1,87 @@
+<section class="section">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header bordered">
+          <div class="header-block">
+            <h3 class="title">Список событий</h3>
+          </div>
+          <div class="form-inline pull-right m-r-2">
+            <div class="form-group">
+              <input type="text" class="form-control" [placeholder]="searchPlaceholder" ([ngModel])="searchValue">
+            </div>
+
+            <div class="dropdown show btn-group" pipsDropdown="">
+              <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Параметр
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+               <li><a class="dropdown-item" (click)="changeCriteria('amount')">Сумма</a></li>
+               <li><a class="dropdown-item" (click)="changeCriteria('date')">Дата</a></li>
+               <li><a class="dropdown-item" (click)="changeCriteria('category')">Категория</a></li>
+               <li><a class="dropdown-item" (click)="changeCriteria('type')">Тип</a></li>
+              </div>
+            </div>
+
+            <!--<div class="dropdown btn-group" pipsDropdown>-->
+              <!--<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">-->
+               <!--Параметр-->
+              <!--</button>-->
+              <!--<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">-->
+                <!--<a class="dropdown-item" href="#">Сумма</a><br>-->
+                <!--<a class="dropdown-item" href="#">Дата</a>-->
+                <!--<a class="dropdown-item" href="#">Категория</a>-->
+                <!--<div class="dropdown-divider"></div>-->
+                <!--<a class="dropdown-item" href="#">Тип</a>-->
+              <!--</div>-->
+            <!--</div>-->
+
+
+            <!--<div class="btn-group" pipsDropdown>-->
+              <!--<button type="button" class="btn btn-primary dropdown-toggle">Параметр</button>-->
+            <!--</div>-->
+            <!--<div class="dropdown-menu">-->
+              <!--<a href="#" class="dropdown-item">Action</a>-->
+              <!--<a href="#" class="dropdown-item">Action</a>-->
+              <!--<a href="#" class="dropdown-item">Action</a>-->
+              <!--<div class="dropdown-divider"></div>-->
+              <!--<a href="#" class="dropdown-item">Action</a>-->
+            <!--</div>-->
+
+          </div>
+        </div>
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Сумма</th>
+            <th>Дата</th>
+            <th>Категория</th>
+            <th>Тип</th>
+            <th class="text-lg-center">Действие</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let e of events | pipsFilter: searchValue: searchField; let idx = index">
+              <th scope="row">{{ idx + 1 }}</th>
+              <td>{{ e.amount | number:'1.2' }}</td>
+              <td>{{ e.date }}</td>
+              <td>{{ e.catName }}</td>
+              <td>
+                <span [ngClass]="getEventClass(e)">
+                  <span *ngIf="e.type === 'income'">Доход</span>
+                  <span *ngIf="e.type === 'outcome'">Расход</span>
+                </span>
+              </td>
+              <td class="text-lg-center">
+                <a [routerLink]="['/system/history', e.id]" class="btn btn-primary-outline">Открыть</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

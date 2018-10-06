@@ -1,0 +1,13 @@
+<div class="title-block">
+	<h1 class="title pull-left">Страница счета<span class="sparkline bar"></span></h1>
+	<div class="pull-right">
+		<button class="btm-sm btn btn-primary-outline" (click)="onRefresh()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+	</div>
+</div>
+<section class="section">
+	<div class="row" *ngIf="!isLoaded">Loading...</div>
+		<div class="wrap-card" *ngIf="isLoaded">
+			<pips-bill-card [bill]="bill" [currency]="currency"></pips-bill-card>
+			<pips-currency-card [currency]="currency"></pips-currency-card>
+		</div>
+</section>

@@ -1,0 +1,97 @@
+.text-center {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000;
+}
+
+.form-group {
+	margin: 30px 0 30px 0;
+}
+
+.label {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	color: #3a4553;
+
+}
+
+.form-control {
+	height: 30px;
+	border-radius: 0;
+	border-top: 0 !important;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: solid 1px #E0B378;
+	color: #814f23;
+	font-size: 14px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	background-color: #EDEDED;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	margin-top: 10px;
+}
+
+.form-control:focus {
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	border-bottom: 1px solid #A06C38;
+}
+
+.btn {
+	height: 30px;
+	margin-top: 30px;
+	border-radius: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	background-color: #AB7842;
+	border: none;
+	-webkit-transition: background 0.5s ease;
+	-o-transition: background 0.5s ease;
+	transition: background 0.5s ease;
+}
+
+.btn:hover {
+	background-color: #BD8C53;
+}
+
+.btn:focus, .btn:active, .btn:visited {
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	background-color: #DFB277 !important;
+}
+
+.text-muted {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #000;
+}
+
+.link {
+	margin-left: 10px;
+	color: #E0B378;
+	font-style: italic;
+}
+
+.has-error {
+	color: #ff1200;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.alert {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #000;
+}

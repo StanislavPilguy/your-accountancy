@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-block">
+    <div class="wrap-title-block">
+      <h2 class="title-bill">Счет</h2>
+    </div>
+    <div class="stat-container">
+      <div class="stat-icon">UAH</div>
+      <div class="value">{{ bill.value | number:'1.2' }}</div>
+    </div>
+    <div class="stat-container">
+      <div class="stat-icon">USD</div>
+      <div class="value">{{ dollar | number:'1.1-2' }}</div>
+    </div>
+    <div class="stat-container">
+      <div class="stat-icon">EUR</div>
+      <div class="value">{{ euro | number:'1.2-2' }}</div>
+    </div>
+  </div>
+</div>
